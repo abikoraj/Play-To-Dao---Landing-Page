@@ -1,0 +1,97 @@
+.wrapper {
+  min-height: 100vh;
+  background: url(bg.png) center;
+}
+
+.border {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 5%;
+  bottom: 5%;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+}
+
+.lan-btn {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 24px;
+  margin-right: 10px;
+  font-family: "Avenir LT Std", sans-serif;
+}
+
+.img-logo {
+  margin-top: -5%;
+}
+.img-logo > img {
+  width: 40%;
+}
+.text-para {
+  max-width: 600px;
+  margin: auto;
+}
+
+.porto {
+  font-family: "Portico", sans-serif;
+}
+
+.input-box {
+  width: 50%;
+  margin: auto;
+}
+
+.input-text {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-btn {
+  padding: 5px 15px;
+  margin: 5px;
+}
+.btm-text {
+  position: absolute;
+  left: calc(50% - 222px / 2);
+  bottom: -20px;
+  font-family: Portico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 37px;
+  border: none;
+
+  color: #ffffff;
+}
+
+.imp-btn {
+  background: rgba(247, 37, 133, 0.5);
+}
+.imp-btn:hover {
+  background: rgba(247, 37, 133, 1);
+}
+
+.btm-text {
+  background: transparent;
+}
+
+@media (max-width: 480px) {
+  .lan-btn {
+    display: none;
+  }
+
+  .img-logo {
+    margin-top: unset;
+  }
+  .img-logo > img {
+    width: 70%;
+  }
+  .text-para {
+    max-width: unset;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 0.8rem;
+  }
+  .input-box {
+    width: unset;
+    margin: 15px;
+  }
+}
