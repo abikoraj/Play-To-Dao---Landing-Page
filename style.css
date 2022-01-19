@@ -62,6 +62,13 @@
   color: #ffffff;
 }
 
+i::before,
+::after {
+  border: none;
+  outline: none;
+  box-sizing: unset;
+}
+
 .imp-btn {
   background: rgba(247, 37, 133, 0.5);
 }
@@ -71,6 +78,39 @@
 
 .btm-text {
   background: transparent;
+}
+
+.modal-container {
+  border-radius: 18px;
+}
+
+.modal-back {
+  border-radius: 18px;
+  background: linear-gradient(90deg, #56ffff 0%, #fd458a 98.77%);
+}
+
+.modal-front {
+  background: rgba(0, 0, 0, 0.94);
+  border-radius: 15px;
+  font-family: "Avenir LT Std", sans-serif;
+  color: #ffffff;
+  opacity: 80;
+}
+
+.modal-front > h3 {
+  font-family: "Portico", sans-serif;
+}
+
+.modal-front > span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.pop-btn {
+  display: none;
+}
+
+.btn-social > button > i {
+  padding: 10px;
 }
 
 @media (max-width: 480px) {
@@ -93,5 +133,33 @@
   .input-box {
     width: unset;
     margin: 15px;
+  }
+  .btn-social > button > span {
+    display: none;
+  }
+  .btn-social > button > i {
+    padding: 5px;
+  }
+  .pop-btn {
+    display: flex;
+    justify-content: right;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 4%;
+    bottom: 4%;
+  }
+
+  .bottom-modal {
+    background: rgba(255, 255, 255, 0.85);
+    font-family: "Avenir LT Std", sans-serif;
+  }
+
+  .btm-text {
+    font-size: 7vw;
+    position: fixed;
+    bottom: 9px;
+    left: 21%;
+    margin: auto;
   }
 }
